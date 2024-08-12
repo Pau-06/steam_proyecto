@@ -1,0 +1,123 @@
+/* Aplicamos selector universal en margin y padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Utilizamos en todo la pagina la siguiente fuente, y por defecto color de fondo azul retocado */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(46, 12, 168);
+}
+
+/* Ajustes en el header, primero flexibilizamos, luego centramos los accesos del menu, y por ultimo justificamos el contenido. Aplicamos fondo negro para dar mas realce */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: black;
+}
+
+/* Llamamos la clase logo para dar ajuste a la imagen contenida */
+.logo img {
+  height: 50px;
+}
+
+/* De aca en adelante se aplican ajustes al navbar, algunos ajustes son espeficos y resumidos en el tipeo de codigo */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+nav ul li a:hover {
+  color: #2aa5f1;
+}
+
+/* imagen desplegable */
+/* .desplegar {
+  position: relative;
+  display: inline-block;
+  width: 100;
+  height: 50;
+}
+.c {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px, 8px, 16px, 0px rgba ( 0,0,0,0.2);
+  z-index: 1;
+  width: 100;
+  height: 200;
+}
+.desplegar:hover .c {
+  display: block;
+}
+.texto {
+  padding: 15px;
+  text-align: center;
+} */
+.todo {
+  background-color: #091048;
+  display: flex;
+}
+
+.gallery {
+  margin: 5px;
+  border: 3px solid #ffffff;
+  float: left;
+  background-color: #030725;
+}
+
+.gallery:hover {
+  border: 1px solid #ede6e6;
+}
+
+.gallery img {
+  width: 300px;
+  height: 250px;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.precio {
+  color: rgb(11, 198, 11);
+  background-color: #20630c;
+  font-size: 20px;
+}
+.oferta {
+  color: slategrey;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  padding: 5px;
+}
+
+/* LOS ESTILOS SON A MODO SUGERENCIA, LOS PUEDEN RETOCAR A SU GUSTO. RESPETE EL AZUL Y NEGRO, TIPICOS DE STEAM! */
+
+/* EL MIERCOLES DEBERIAN CONTINUAR CON LAS SECCIONES (AL MENOS UNA) Y PIE DE PAGINA - SECTION Y FOOTER, LAS IMAGENES QUE TENIAN */
+
+/* LUEGO CAMBIEN SI LES PARECE EL ICONITO QUE TENIAN EN EL INICIO ARRIBA A LA IZQUIERDA */
+
+/* PROYECTO STEAM */
