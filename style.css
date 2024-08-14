@@ -6,7 +6,7 @@
 
 /* Utilizamos en todo la pagina la siguiente fuente, y por defecto color de fondo azul retocado */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serf;
   background-color: rgb(46, 12, 168);
 }
 
@@ -107,17 +107,83 @@ nav ul li a:hover {
   background-color: #20630c;
   font-size: 20px;
 }
+
 .oferta {
   color: slategrey;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
   padding: 5px;
 }
 
-/* LOS ESTILOS SON A MODO SUGERENCIA, LOS PUEDEN RETOCAR A SU GUSTO. RESPETE EL AZUL Y NEGRO, TIPICOS DE STEAM! */
+.footer {
+  background-color: #171a21;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  padding: 80px 0;
+  
+}
 
-/* EL MIERCOLES DEBERIAN CONTINUAR CON LAS SECCIONES (AL MENOS UNA) Y PIE DE PAGINA - SECTION Y FOOTER, LAS IMAGENES QUE TENIAN */
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-link ul {
+  list-style: none;
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-/* LUEGO CAMBIEN SI LES PARECE EL ICONITO QUE TENIAN EN EL INICIO ARRIBA A LA IZQUIERDA */
+.footer-link h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #00ceff;
+  display: inline-block;
+  padding-bottom: 10px;
+}
 
+.footer-link ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #bbbbbb;
+  display: block;
+  margin-bottom: 15px;
+  transition: all .3s ease;
+}
+
+.footer-link ul li a:hover {
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+.social-link a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all .5s ease;
+}
+
+.social-link a:hover {
+  background-color: #00ceff;
+}
+
+@media(max-width:991px) {
+  .footer-row {
+    text-align: center;
+  }
+  .footer-link {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 /* PROYECTO STEAM */
