@@ -120,7 +120,7 @@ nav ul li a:hover {
   text-transform: capitalize;
   font-family: sans-serif;
   padding: 80px 0;
-  
+  text-align: center;
 }
 
 .conteiner {
@@ -185,5 +185,11 @@ nav ul li a:hover {
     width: 100%;
     margin-bottom: 30px;
   }
+}
+.all {
+  height: 700px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 /* PROYECTO STEAM */
