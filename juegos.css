@@ -1,100 +1,107 @@
-
 /* Aplicamos selector universal en margin y padding */
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Utilizamos en todo la pagina la siguiente fuente, y por defecto color de fondo azul retocado */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(46, 12, 168);
-  }
-  
-  /* Ajustes en el header, primero flexibilizamos, luego centramos los accesos del menu, y por ultimo justificamos el contenido. Aplicamos fondo negro para dar mas realce */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: black;
-  }
-  
-  /* Llamamos la clase logo para dar ajuste a la imagen contenida */
-  .logo img {
-    height: 50px;
-  }
-  
-  /* De aca en adelante se aplican ajustes al navbar, algunos ajustes son espeficos y resumidos en el tipeo de codigo */
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-  }
-  
-  nav ul li a:hover {
-    color: #2aa5f1;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+/* Utilizamos en todo la pagina la siguiente fuente, y por defecto color de fondo azul retocado */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(./imagenes/fondo.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+/* Ajustes en el header, primero flexibilizamos, luego centramos los accesos del menu, y por ultimo justificamos el contenido. Aplicamos fondo negro para dar mas realce */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: black;
+}
+
+/* Llamamos la clase logo para dar ajuste a la imagen contenida */
+.logo img {
+  height: 50px;
+}
+
+/* De aca en adelante se aplican ajustes al navbar, algunos ajustes son espeficos y resumidos en el tipeo de codigo */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+nav ul li a:hover {
+  color: #2aa5f1;
+}
+
 .card {
-    width: 20%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
+  width: 20%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
 }
 
 .card:hover {
-    box-shadow: 7px 7px 20px rgba(0, 0, 0, 1)
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 1)
 }
 
 .card .foto {
-    width: 100%;
-    height: 100px;
+  width: 100%;
+  height: 100px;
 }
+
 .card .contenido {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 
 }
-.card .contenido p{
-    line-height: 1.5;
-    color: rgb(70, 67, 67);
+
+.card .contenido p {
+  line-height: 1.5;
+  color: rgb(70, 67, 67);
 }
+
 .card .contenido h3 {
-    font-weight: 400;
-    margin-bottom: 15px;
+  font-weight: 400;
+  margin-bottom: 15px;
 }
-.card .contenido a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(42, 10, 223);
-    border: 1px solid rgb(42, 10, 223);
-    border-radius: 4px;
-    transition: all 400ms ease;
+
+.card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(42, 10, 223);
+  border: 1px solid rgb(42, 10, 223);
+  border-radius: 4px;
+  transition: all 400ms ease;
 }
-.card .contenido a:hover{
-background:rgb(42, 10, 223) ;
-color: white;
+
+.card .contenido a:hover {
+  background: rgb(42, 10, 223);
+  color: white;
 }
 
 .bloque {
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    
-    
-  }
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+
+
+}
