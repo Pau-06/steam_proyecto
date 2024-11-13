@@ -1,10 +1,8 @@
-/* Aplicamos selector universal en margin y padding */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Utilizamos en todo la pagina la siguiente fuente, y por defecto color de fondo azul retocado */
 body {
   font-family: Arial, sans-serf;
   background-color: rgb(46, 12, 168);
@@ -13,7 +11,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Ajustes en el header, primero flexibilizamos, luego centramos los accesos del menu, y por ultimo justificamos el contenido. Aplicamos fondo negro para dar mas realce */
 header {
   display: flex;
   align-items: center;
@@ -22,12 +19,10 @@ header {
   background-color: black;
 }
 
-/* Llamamos la clase logo para dar ajuste a la imagen contenida */
 .logo img {
   height: 50px;
 }
 
-/* De aca en adelante se aplican ajustes al navbar, algunos ajustes son espeficos y resumidos en el tipeo de codigo */
 nav ul {
   list-style: none;
   display: flex;
@@ -47,138 +42,23 @@ nav ul li a:hover {
   color: #2aa5f1;
 }
 
-.todo {
+.all {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.categoria {
   background-color: #091048;
-  display: flex;
-}
-
-.gallery {
-  margin: 5px;
-  border: 3px solid #ffffff;
-  float: left;
-  background-color: #030725;
-}
-
-.gallery:hover {
-  border: 1px solid #ede6e6;
-}
-
-.gallery img {
-  width: 300px;
-  height: 250px;
-}
-
-.desc {
-  padding: 15px;
-  text-align: center;
-  color: #fff;
-
-}
-
-.todo {
   display: flex;
   justify-content: center;
   padding: 30px;
 }
 
-.precio {
-  color: rgb(11, 198, 11);
-  background-color: #20630c;
-  font-size: 20px;
-}
-
-.oferta {
-  color: slategrey;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
-  padding: 5px;
-}
-
-.footer {
-  background-color: #171a21;
-  text-transform: capitalize;
-  font-family: sans-serif;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.conteiner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-link ul {
-  list-style: none;
-  width: 25%;
-  padding: 0 15px;
-}
-
-.footer-row {
+.categoria-container {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.footer-link h4 {
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 25px;
-  border-bottom: 2px solid #00ceff;
-  display: inline-block;
-  padding-bottom: 10px;
-}
-
-.footer-link ul li a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #bbbbbb;
-  display: block;
-  margin-bottom: 15px;
-  transition: all .3s ease;
-}
-
-.footer-link ul li a:hover {
-  color: #ffffff;
-  padding-left: 6px;
-}
-
-.social-link a {
-  display: inline-block;
-  min-height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all .5s ease;
-}
-
-.social-link a:hover {
-  background-color: #00ceff;
-}
-
-@media(max-width:991px) {
-  .footer-row {
-    text-align: center;
-  }
-
-  .footer-link {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-}
-
-/* .all {
-  height: 700px;
-  width: 70%;
-  margin: 0 auto;
-} */
-
-.categoria {
-  display: flex;
-  width: 5%;
   justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .categoria img {
@@ -189,10 +69,64 @@ nav ul li a:hover {
 }
 
 footer {
-  text-align: center;
+  background-color: #171a21;
+  padding: 50px 0;
+  color: white;
 }
 
-.footer-link {
-  align-items: center;
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
-/* PROYECTO STEAM */
+
+.footer-link h4 {
+  margin-bottom: 20px;
+  color: #00ceff;
+}
+
+.footer-link ul {
+  list-style: none;
+}
+
+.footer-link ul li {
+  margin-bottom: 10px;
+}
+
+.footer-link ul li a {
+  text-decoration: none;
+  color: #bbbbbb;
+  transition: color 0.3s;
+}
+
+.footer-link ul li a:hover {
+  color: #ffffff;
+}
+
+.social-link a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.social-link a:hover {
+  background-color: #00ceff;
+}
+
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-link {
+    margin-bottom: 30px;
+  }
+}
