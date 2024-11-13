@@ -61,3 +61,5 @@ function mostrarSuscripciones() {
 
 // Ejecuta la función 'mostrarSuscripciones' cuando el DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", mostrarSuscripciones);
+
+/* ajustes al 13/11/2024 */
